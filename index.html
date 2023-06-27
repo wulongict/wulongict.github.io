@@ -30,17 +30,17 @@
 
 		h1 {
 			font-size: 1.2em;
-			margin-bottom: 20px;
+			margin-bottom: 0.5em;
 		}
 
 		h2 {
 			font-size: 1.0em;
-			margin-bottom: 15px;
+			margin-bottom: 0.5em;
 		}
 
 		h3 {
 			font-size: 0.8em;
-			margin-bottom: 10px;
+			margin-bottom: 0.5em;
 		}
 
 		p {
@@ -50,7 +50,7 @@
 		}
 		.section{
 			width:100%;
-			margin-top: 5px;
+			margin-top: 4px;
 			margin-bottom: 5px;
 		}
 
@@ -70,12 +70,13 @@
 
 		.section-item-title {
 			font-weight: bold;
-			margin-bottom: 5px;
+			margin-bottom: 0.6em;
 			color: #333;
 		}
 
 		.section-item-subtitle {
-			margin-bottom: 5px;
+			margin-bottom: 0.6em;
+			margin-left:20px;
 			color: #666;
 		}
 
@@ -86,30 +87,34 @@
 
 		.img-container {
 			
-			width: 100px;
-			height: auto;
+			min-width: 100px;
+			min-height: 100px;
+
 			border-radius: 50%;
 			overflow: hidden;
 			margin-bottom: 0px;
-			margin-right: 20px;
-			float: left;
+			margin-right: 10px;
+			
 		}
 
 		.contact {
-			width: auto;
+		
 			height: 100%;
+			
 		}
 
 		.img-container img {
-			width: 100px;
-			height: auto;
+			min-width: 100px;
+			height: 100%;
+
+			width: 100%;
 		}
 
 
 		.footer {
 			font-family: Arial;
 			background-color: #E3D1A1;
-			color: #E3D1A1;
+			
 			padding: 20px;
 			text-align: center;
 			font-size: 0.8em;
@@ -118,15 +123,16 @@
 </head>
 
 <body>
-	<div class="section">
+	<div class="section" style="display:flex;align-items:center;">
+		
 		<div class="img-container">
 			<img src="images/lwu.jpg" alt="Your Name">
 		</div>
-		<div class="contact" height="auto">
+		<div class="contact">
 			<h1>Long WU</h1>
 			<p><b>Address</b>: Room 4609, Academic Building, HKUST, Clear Water Bay, Kowloon, Hong Kong.<br>
-				<b>Email</b>: lwuai@connect.ust.hk<br>
-				<br><br>
+				<br><b>Email</b>: lwuai@connect.ust.hk<br>
+				<br>
 				
 			</p>
 		</div>
@@ -203,26 +209,23 @@
 			Ping Xu, Pei-Heng Zhang and Si-Min He. Comprehensive identification of peptides in tandem mass
 			spectra using an efficient open search engine. <i>Nature Biotechnology</i>, 36(11):1059–1061, 2018 <br><br>
 
-
-
+			Chun Fai Wong, Kar Lun Gallant Chan, <b>Long WU</b>, Hei Ning Lam, Ping Yao, Tina T. X. Dong,  Karl Wah Keung Tsim. 
+			A Comprehensive Proteomics Study on Edible Bird's Nest Using New Monoclonal Antibody Approach And Application In Quality Control. 
+			<i>Journal of Food Composition And Analysis</i>, 66:145-151, 2018 <br><br>
+			
 			Zhen-Lin Chen, Jia-Ming Meng, Yong Cao, Ji-Li Yin, Run-Qian Fang, Sheng-Bo Fan, Chao Liu, Wen-Feng Zeng, 
 			Yue-He Ding, Dan Tan, <b>Long Wu</b>, Wen-Jing Zhou, Hao Chi, Rui-Xiang Sun, Meng-Qiu Dong and Si-Min He.  
 			A high-speed search engine pLink 2 with systematic evaluation for proteome-scale identification of cross-linked peptides. 
 			<i>Nature Communications</i> 10, 3404 (2019)
 			<br><br>
 
-			Chun Fai Wong, Kar Lun Gallant Chan, <b>Long WU</b>, Hei Ning Lam, Ping Yao, Tina T. X. Dong,  Karl Wah Keung Tsim. 
-			A Comprehensive Proteomics Study on Edible Bird's Nest Using New Monoclonal Antibody Approach And Application In Quality Control. 
-			<i>Journal of Food Composition And Analysis</i>, 66:145-151, 2018 <br><br>
-			
-			Dominik Madej, <b> Long WU </b>, and Henry Lam. Common decoy distributions simplify false discovery
-			rate estimation in shotgun proteomics. <i>Journal of Proteome Research</i>, 21(2):339–348, 2022 <br><br>
-						
-
 			Jordy Evan Sulaiman, Lexin Long, <b>Long Wu</b>, Pei-Yuan Qian, Henry Lam,
 			Comparative proteomic investigation of multiple methicillin-resistant Staphylococcus aureus strains generated through adaptive laboratory evolution,
 			<i>iScience</i>, 24(9), 2021 <br><br>
 
+			Dominik Madej, <b> Long WU </b>, and Henry Lam. Common decoy distributions simplify false discovery
+			rate estimation in shotgun proteomics. <i>Journal of Proteome Research</i>, 21(2):339–348, 2022 <br><br>
+						
 			<b>Long WU</b>, Ayman Hoque, Henry Lam. Spectroscape: Real-time Query and Visualization of a Spectral Archive 
 			of Millions of Tandem Mass Spectra. <i>Under review</i>. <br><br>
 			</p>
@@ -235,10 +238,13 @@
 
 	<section class="section">
 		<h2 class="section-title">Research Interests</h2>
-		<ul>
-			<li>algorithm</li>
-			<li>computational proteomics</li>
-		</ul>
+		<div class="section-content">
+			<p>
+				Algorithms<br>
+				Computational proteomics</br>
+			</p>
+
+		</div>
 
 	</section>
 
